@@ -1,0 +1,22 @@
+{
+  "name": "wedding-invitation",
+  "version": "1.0.0",
+  "description": "Luxury Islamic Wedding Invitation Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve . -p 8080",
+    "dev": "serve . -p 8080",
+    "serve": "serve . -p 8080"
+  },
+  "keywords": [
+    "wedding",
+    "invitation",
+    "luxury",
+    "template"
+  ],
+  "author": "framesbyrazeen",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

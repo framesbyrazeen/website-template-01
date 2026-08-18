@@ -1,0 +1,50 @@
+/* Footer & Designer Credit */
+footer {
+  text-align: center;
+  padding: 8vh 6vw 10vh;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: var(--ivory-dim);
+  text-transform: uppercase;
+}
+
+.footer-couple {
+  opacity: 0.6;
+  margin-bottom: 12px;
+}
+
+.designer-credit {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 10.5px;
+  letter-spacing: 0.24em;
+  color: var(--ivory-dim);
+  opacity: 0.55;
+  text-transform: uppercase;
+}
+
+.designer-credit a {
+  color: var(--gold-soft);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.3s ease, border-color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.designer-credit a:hover {
+  color: var(--gold-bright);
+  border-bottom-color: var(--gold);
+  text-shadow: 0 0 8px rgba(201, 162, 75, 0.45);
+}
+
+/* Responsiveness */
+@media (max-width: 640px) {
+  .moment { grid-template-columns: 56px 1fr; gap: 18px; }
+  .moment-ring { width: 48px; height: 48px; font-size: 10.5px; }
+  .venue-row { flex-direction: column; gap: 4px; }
+  .venue-row .label { flex: none; }
+  .date-block { gap: 14px; }
+  .date-num { font-size: 46px; }
+  .button-group { flex-direction: column; width: 100%; }
+  .magnetic-btn { width: 100%; justify-content: center; }
+}

@@ -1,0 +1,43 @@
+/* Typography Roles */
+.font-marcellus {
+  font-family: 'Marcellus', serif;
+  letter-spacing: 0.03em;
+}
+
+.font-verse-whisper {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+}
+
+.font-kufi {
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.font-arabic {
+  font-family: 'Amiri', serif;
+  direction: rtl;
+}
+
+.eyebrow {
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: var(--gold-soft);
+  text-transform: uppercase;
+}
+
+/* Engraved Relief Text Effect */
+.engraved-title {
+  font-family: 'Marcellus', serif;
+  color: var(--ivory);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05em;
+  text-shadow:
+    -1px -1px 1px rgba(246, 240, 228, 0.45),
+    2px 2px 3px rgba(3, 10, 8, 0.85),
+    0 0 16px rgba(201, 162, 75, 0.15);
+  animation: engravedLightSweep 12s ease-in-out infinite alternate;
+}

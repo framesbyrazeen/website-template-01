@@ -1,0 +1,183 @@
+/* Formal Invitation Card Section */
+.invite-section {
+  padding: 6vh 6vw 14vh;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  max-width: 620px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(246,240,228,0.038), rgba(246,240,228,0.012));
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: clamp(34px, 6vw, 68px) clamp(24px, 6vw, 54px);
+  text-align: center;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.card-corner {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--gold);
+  opacity: 0.75;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.card-corner-tl { top: 12px; left: 12px; border-right: none; border-bottom: none; }
+.card-corner-tr { top: 12px; right: 12px; border-left: none; border-bottom: none; }
+.card-corner-bl { bottom: 12px; left: 12px; border-right: none; border-top: none; }
+.card-corner-br { bottom: 12px; right: 12px; border-left: none; border-top: none; }
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.parents-name {
+  display: block;
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 0.18em;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--gold-soft);
+  margin: 2px 0 10px;
+  text-transform: uppercase;
+}
+
+.invite-lead {
+  font-family: 'Lora', serif;
+  font-size: 14.5px;
+  line-height: 1.95;
+  color: var(--ivory-dim);
+  max-width: 440px;
+  margin: 18px auto;
+}
+
+.couple-block {
+  margin: 28px 0;
+}
+
+.couple-name {
+  font-family: 'Marcellus', serif;
+  font-size: clamp(28px, 5.8vw, 40px);
+  letter-spacing: 0.07em;
+  color: var(--ivory);
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.couple-sub {
+  font-family: 'Lora', serif;
+  font-size: 12.5px;
+  color: var(--ivory-dim);
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.and-divider {
+  margin: 14px auto;
+  width: 40px;
+  text-align: center;
+  color: var(--gold);
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 22px;
+  animation: ampPulse 3.5s ease-in-out infinite;
+}
+
+.date-block {
+  margin: 32px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.date-num {
+  font-family: 'Marcellus', serif;
+  font-size: 58px;
+  line-height: 1;
+  color: var(--gold-bright);
+  position: relative;
+  text-shadow: 0 0 16px rgba(201,162,75,0.25);
+}
+
+.date-num::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 36px;
+  height: 1px;
+  background: var(--gold);
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  animation: lineGrow 3.2s ease-in-out infinite;
+}
+
+@keyframes lineGrow {
+  0%, 100% { transform: translateX(-50%) scaleX(0.3); opacity: 0.4; }
+  50% { transform: translateX(-50%) scaleX(1); opacity: 1; }
+}
+
+.date-text {
+  text-align: left;
+}
+
+.date-text .month {
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ivory);
+  text-transform: uppercase;
+}
+
+.date-text .time {
+  font-family: 'Lora', serif;
+  font-size: 13.5px;
+  color: var(--gold-soft);
+  margin-top: 4px;
+}
+
+.reception-tag {
+  display: inline-block;
+  margin: 12px 0 4px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  color: var(--blush);
+  text-transform: uppercase;
+}
+
+.venue-name {
+  font-family: 'Marcellus', serif;
+  font-size: 26px;
+  letter-spacing: 0.08em;
+  color: var(--ivory);
+  margin: 6px 0 3px;
+  text-transform: uppercase;
+}
+
+.venue-loc {
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  color: var(--ivory-dim);
+  letter-spacing: 0.04em;
+}
+
+.compliments {
+  margin-top: 30px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  color: var(--gold-soft);
+  opacity: 0.85;
+  text-transform: uppercase;
+}

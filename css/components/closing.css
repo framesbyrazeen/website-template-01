@@ -1,0 +1,64 @@
+/* Closing & Monogram Section */
+.closing {
+  padding: 16vh 8vw 12vh;
+  text-align: center;
+}
+
+.monogram {
+  margin: 4vh auto 4vh;
+  width: 92px;
+  height: 92px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Marcellus', serif;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  color: var(--gold-bright);
+  text-shadow: 0 0 12px rgba(201,162,75,0.3);
+}
+
+.monogram svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.monogram-ring {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 1;
+  opacity: 0.65;
+  animation: rotateSlow 45s linear infinite;
+  transform-origin: center;
+}
+
+.monogram-ring-2 {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1;
+  stroke-dasharray: 3 6;
+  animation: rotateSlow 65s linear infinite reverse;
+  transform-origin: center;
+}
+
+@keyframes rotateSlow {
+  to { transform: rotate(360deg); }
+}
+
+.closing h2 {
+  font-family: 'Marcellus', serif;
+  font-weight: 400;
+  font-size: clamp(26px, 4.8vw, 40px);
+  line-height: 1.45;
+  letter-spacing: 0.05em;
+  max-width: 620px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.closing .compliments {
+  margin-top: 24px;
+}

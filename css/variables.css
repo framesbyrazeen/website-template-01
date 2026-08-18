@@ -1,0 +1,45 @@
+:root {
+  --ink:              #0a1814;
+  --emerald-base:     #0c261f;
+  --emerald-warm:     #122b20;
+  --emerald-cool:     #092624;
+  --emerald-rich:     #0f3328;
+  --gold:             #c9a24b;
+  --gold-soft:        #e4c988;
+  --gold-bright:      #f3dfa2;
+  --gold-dark:        #6b4e18;
+  --ivory:            #f6f0e4;
+  --ivory-dim:        #e5dcce;
+  --blush:            #d9b3a3;
+  --line:             rgba(201,162,75,0.32);
+  --line-faint:       rgba(201,162,75,0.14);
+  --shadow:           0 24px 64px rgba(6,16,12,0.45);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: var(--emerald-base);
+  color: var(--ivory);
+  font-family: 'Lora', Georgia, serif;
+  overflow-x: hidden;
+  position: relative;
+  transition: background-color 1.4s ease;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+}
+
+/* Focus visible accessibility */
+:focus-visible {
+  outline: 2px solid var(--gold-soft);
+  outline-offset: 4px;
+}
